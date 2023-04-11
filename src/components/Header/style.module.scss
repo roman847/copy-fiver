@@ -1,0 +1,30 @@
+.wrapper {
+  @apply w-full sticky top-0 bg-dark-green z-50 duration-300;
+}
+
+.wrapperActive {
+  @apply w-full sticky top-0 bg-white z-50 duration-300;
+}
+
+.container {
+  margin: 0 auto;
+  @apply max-w-screen-2xl flex justify-between gap-5 items-center
+    bg-dark-green pt-3 pb-3 px-10 duration-300;
+
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+
+  @media screen and (max-width: 950px) {
+    @apply gap-2;
+  }
+}
+
+.containerActive {
+  margin: 0 auto;
+  @apply max-w-screen-2xl flex justify-between gap-5 items-center bg-white pt-3 pb-3 px-10 duration-300;
+
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+}

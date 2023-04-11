@@ -1,0 +1,15 @@
+.burger {
+  @apply w-full h-6 flex flex-col justify-between cursor-pointer duration-300;
+
+  &:hover {
+    @apply opacity-50;
+  }
+
+  .burgerLine {
+    @apply w-full bg-white h-1;
+  }
+
+  .burgerLineActive {
+    @apply w-full bg-black h-1;
+  }
+}

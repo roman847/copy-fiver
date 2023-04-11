@@ -1,0 +1,56 @@
+.container {
+  @apply max-w-lg ml-auto;
+
+  .navList {
+    @apply w-full flex justify-end gap-3 items-center;
+
+    @media screen and (max-width: 950px) {
+      @apply hidden;
+    }
+    .listItem {
+      @apply relative font-inter text-white text-3xl;
+
+      &:after {
+        content: "";
+        @apply absolute left-0 top-9 w-0 h-0.5 bg-white duration-300;
+
+        @media screen and (max-width: 1440px) {
+          @apply top-8;
+        }
+      }
+      &:hover::after {
+        @apply w-full;
+      }
+
+      @media screen and (max-width: 1440px) {
+        @apply text-2xl;
+      }
+      @media screen and (max-width: 1024px) {
+        @apply text-xl;
+      }
+    }
+
+    .listItemActive {
+      @apply relative font-inter text-black text-3xl;
+
+      &:after {
+        content: "";
+        @apply absolute left-0 top-9 w-0 h-0.5 bg-black duration-300;
+
+        @media screen and (max-width: 1440px) {
+          @apply top-8;
+        }
+      }
+      &:hover::after {
+        @apply w-full;
+      }
+
+      @media screen and (max-width: 1440px) {
+        @apply text-2xl;
+      }
+      @media screen and (max-width: 1024px) {
+        @apply text-xl;
+      }
+    }
+  }
+}

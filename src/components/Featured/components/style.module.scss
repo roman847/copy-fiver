@@ -1,0 +1,11 @@
+.container {
+  @apply flex gap-5 py-10;
+
+  @media screen and (max-width: 950px) {
+    @apply hidden;
+  }
+
+  .title {
+    @apply text-white font-inter font-bold;
+  }
+}

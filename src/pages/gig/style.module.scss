@@ -1,0 +1,51 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+}
+
+.mainContent {
+  @apply py-10;
+
+  .mainContentLeft {
+    @apply w-2/4;
+  }
+
+  .contentDesc {
+    @apply font-inter text-xl font-bold mb-3;
+  }
+
+  .personData {
+    .personAvatarContainer {
+      @apply flex justify-start gap-2 items-center mb-3;
+
+      .avatarContainer {
+        overflow: hidden;
+
+        .personAvatar {
+          @apply w-10 h-10 rounded-full;
+        }
+      }
+
+      .userName {
+        @apply font-inter font-bold;
+      }
+
+      .starBlock {
+        @apply flex justify-start gap-1;
+
+        .star {
+          @apply w-5 h-5;
+        }
+      }
+    }
+  }
+}
+
+.contentPoster {
+  margin: 0 auto;
+  @apply w-3/4;
+}

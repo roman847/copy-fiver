@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  @apply w-11/12 p-10 z-0 box-border;
+
+  @media screen and (max-width: 950px) {
+    @apply w-4/5;
+  }
+  @media screen and (max-width: 360px) {
+    @apply w-3/4;
+  }
+}

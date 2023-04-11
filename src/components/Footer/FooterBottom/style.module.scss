@@ -1,0 +1,45 @@
+.container {
+  @apply w-full flex justify-between pb-4;
+
+  @media screen and (max-width: 550px) {
+    @apply flex-col justify-center items-center gap-1;
+  }
+
+  .left {
+    @apply flex items-center gap-2;
+
+    @media screen and (max-width: 550px) {
+      @apply flex-col gap-1;
+    }
+  }
+
+  .footerLogo {
+    @apply flex;
+
+    b {
+      @apply text-2xl font-inter font-black text-gray;
+    }
+
+    span {
+      @apply text-gray mt-2;
+    }
+  }
+
+  .leftText {
+    @apply flex text-gray;
+  }
+
+  .right {
+    @apply flex;
+
+    .socialBlock {
+      @apply flex gap-3;
+
+      .socialBlockLink {
+        .socialBlockIcon {
+          @apply top-0 right-1 w-6 h-6 z-40;
+        }
+      }
+    }
+  }
+}

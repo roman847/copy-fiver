@@ -1,0 +1,19 @@
+.searchBtn {
+  margin: 0 auto;
+  @apply w-full  h-full bg-green px-3 font-inter font-bold
+   text-white text-lg tracking-wide  duration-300;
+
+  &:hover {
+    @apply opacity-60;
+  }
+}
+
+.searchBtnGray {
+  margin: 0 auto;
+  @apply w-full  h-full bg-gray font-inter font-bold
+   text-light-blue text-lg tracking-wide  duration-300;
+
+  &:hover {
+    @apply opacity-60;
+  }
+}

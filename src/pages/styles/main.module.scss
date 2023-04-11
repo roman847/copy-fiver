@@ -1,0 +1,26 @@
+.carouselWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @apply box-border py-10;
+
+  .carouselTitle {
+    @apply text-black font-inter text-4xl font-bold;
+
+    @media screen and (max-width: 1440px) {
+      @apply ml-5;
+    }
+
+    @media screen and (max-width: 1440px) {
+      @apply text-3xl;
+    }
+
+    @media screen and (max-width: 950px) {
+      @apply text-3xl;
+    }
+
+    @media screen and (max-width: 550px) {
+      @apply text-2xl text-center;
+    }
+  }
+}

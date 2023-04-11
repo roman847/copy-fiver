@@ -1,0 +1,30 @@
+.form {
+  @apply flex flex-col gap-2;
+}
+
+.title {
+  @apply mb-8 font-inter font-bold text-xl;
+}
+
+.inputField {
+  border: 1px solid gray;
+  @apply w-full bg-ultra-light-gray  border-gray px-2 py-1
+  font-inter rounded-sm;
+
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.inputFieldError {
+  border: 1px solid red;
+  @apply outline-none w-full bg-ultra-light-gray  px-2 py-1
+  font-inter rounded-sm;
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.errorMessage {
+  @apply text-red  font-inter;
+}

@@ -1,0 +1,70 @@
+.container {
+  @apply w-52 h-auto flex justify-between items-center;
+
+  @media screen and (max-width: 1440px) {
+    @apply w-40;
+  }
+
+  @media screen and (max-width: 1024px) {
+    @apply w-36;
+  }
+
+  @media screen and (max-width: 950px) {
+    @apply w-32;
+  }
+
+  .authBtn {
+    @apply flex items-center text-3xl text-center border-none outline-none text-white mb-1 duration-300;
+
+    &:hover {
+      @apply opacity-50;
+    }
+
+    @media screen and (max-width: 1440px) {
+      @apply text-2xl;
+    }
+
+    @media screen and (max-width: 1024px) {
+      @apply text-xl;
+    }
+
+    @media screen and (max-width: 950px) {
+      @apply text-base;
+    }
+  }
+
+  .authBtnActive {
+    @apply flex items-center text-3xl text-center border-none outline-none text-black mb-1 duration-300;
+
+    &:hover {
+      @apply opacity-50;
+    }
+
+    @media screen and (max-width: 1440px) {
+      @apply text-2xl;
+    }
+
+    @media screen and (max-width: 1024px) {
+      @apply text-xl;
+    }
+
+    @media screen and (max-width: 950px) {
+      @apply text-base;
+    }
+  }
+
+  .joinBtn {
+    @apply border-solid border-white border-2 py-1 px-4 rounded-lg;
+
+    &:hover {
+      @apply bg-green opacity-100 border-green;
+    }
+  }
+  .joinBtnActive {
+    @apply border-solid border-black border-2 py-1 px-4 rounded-lg;
+
+    &:hover {
+      @apply bg-green opacity-100 border-green;
+    }
+  }
+}

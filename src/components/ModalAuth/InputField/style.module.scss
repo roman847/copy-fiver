@@ -1,0 +1,9 @@
+.container {
+  @apply w-full;
+
+  .inputField {
+    border: 1px solid gray;
+    @apply w-full bg-ultra-light-gray  border-gray px-2 py-1
+    font-inter rounded-sm;
+  }
+}

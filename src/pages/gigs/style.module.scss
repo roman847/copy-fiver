@@ -1,0 +1,60 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  @apply py-10;
+
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+
+  .title {
+    @apply font-inter text-2xl font-bold mb-2;
+  }
+  .desc {
+    @apply font-inter mb-2;
+  }
+
+  .filter {
+    @apply flex justify-between pb-10;
+
+    @media screen and (max-width: 920px) {
+      @apply flex-col gap-2;
+    }
+  }
+
+  .texFieldsBlock {
+    @apply flex gap-2 items-center;
+
+    .textField {
+      border: 1px solid gray;
+      @apply px-1 py-0.5 font-inter;
+
+      &:focus {
+        @apply outline-none;
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+      @apply flex-wrap;
+    }
+    .maxField {
+      @media screen and (max-width: 580px) {
+        @apply ml-16;
+      }
+    }
+  }
+
+  .sortBlock {
+    .sortSelect {
+      @apply w-32;
+    }
+  }
+}
+
+.containerCards {
+  @apply flex flex-wrap justify-center gap-3;
+}
+
+.filterDesc {
+  @apply font-inter text-gray;
+}

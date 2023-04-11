@@ -1,0 +1,39 @@
+.container {
+  @apply w-full;
+}
+
+.footerTop {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+
+  .containerColumns {
+    max-width: 1440px;
+    margin: 0 auto;
+    @apply w-full flex justify-between flex-wrap gap-10;
+  }
+
+  .selectList {
+    @apply w-full px-0 m-0 font-inter font-bold;
+
+    .listLink {
+      @apply text-base font-normal;
+    }
+  }
+}
+
+.footerBottom {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+
+  hr {
+    @apply w-full h-1 text-light-gray pb-7;
+  }
+}

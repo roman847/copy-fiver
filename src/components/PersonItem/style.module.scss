@@ -1,0 +1,45 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  @apply flex justify-between gap-5 items-center;
+
+  @media screen and (max-width: 950px) {
+    @apply flex-col;
+  }
+
+  .playerWrapper {
+    @apply w-2/5 h-auto;
+
+    @media screen and (max-width: 950px) {
+      @apply w-full;
+    }
+  }
+
+  .content {
+    @apply w-3/5;
+
+    @media screen and (max-width: 950px) {
+      @apply w-full;
+    }
+
+    .contentTitle {
+      @apply text-xl font-inter text-gray;
+    }
+
+    .contentQuote {
+      @apply py-10;
+
+      @media screen and (max-width: 550px) {
+        @apply py-5;
+      }
+
+      q {
+        @apply text-2xl font-inter text-dark-green italic;
+
+        @media screen and (max-width: 1180px) {
+          @apply text-xl;
+        }
+      }
+    }
+  }
+}

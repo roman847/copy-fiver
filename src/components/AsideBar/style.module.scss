@@ -1,0 +1,23 @@
+.list {
+  @apply p-9;
+
+  @media screen and (max-width: 1440px) {
+    @apply p-7;
+  }
+
+  .listItem {
+    @apply font-inter text-xl mb-3;
+  }
+
+  .asideLine {
+    @apply mt-4 mb-2;
+  }
+
+  .containerAuth {
+    @apply w-full flex justify-between;
+  }
+}
+
+.burgerContainer {
+  @apply w-8;
+}

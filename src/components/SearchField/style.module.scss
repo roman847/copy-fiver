@@ -1,0 +1,50 @@
+.container {
+  @apply flex mt-8 z-0;
+
+  @media screen and (max-width: 950px) {
+    @apply relative;
+  }
+
+  .textField {
+    @apply w-11/12 h-12 pl-6 text-lg font-inter  z-0;
+
+    &:focus {
+      @apply outline-0;
+    }
+
+    @media screen and (max-width: 950px) {
+      bottom: -60px;
+      @apply w-full rounded-md rounded-l-none;
+    }
+
+    @media screen and (max-width: 550px) {
+      @apply text-base h-10;
+    }
+  }
+
+  .containerImg {
+    @apply flex bg-white pl-5 rounded-md rounded-r-none;
+
+    .searchImg {
+      @apply w-5 h-5 z-0 mt-auto mb-auto;
+    }
+  }
+
+  .wrapperSearchBtn {
+    @apply flex justify-center w-1/6 h-12 bg-green rounded-md rounded-l-none;
+
+    &:hover {
+      @apply opacity-80 duration-300;
+    }
+
+    @media screen and (max-width: 950px) {
+      bottom: -60px;
+      @apply absolute  w-full rounded-md;
+    }
+
+    @media screen and (max-width: 550px) {
+      bottom: -50px;
+      @apply text-base h-10;
+    }
+  }
+}

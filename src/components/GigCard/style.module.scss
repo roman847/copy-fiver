@@ -1,0 +1,53 @@
+.cardContent {
+  @apply px-2;
+}
+
+.person {
+  @apply flex justify-start gap-3 items-center font-inter font-bold mt-3;
+
+  .personAvatar {
+    @apply w-10 h-10 rounded-full;
+  }
+}
+
+.cardDesc {
+  @apply font-inter text-sm;
+}
+
+.rate {
+  @apply flex justify-start gap-1 items-center;
+
+  .rateImg {
+    @apply w-5 h-5;
+  }
+
+  span {
+    @apply font-inter text-yellow;
+  }
+}
+
+.cardLine {
+  @apply text-gray;
+}
+
+.cardFooter {
+  @apply flex justify-between items-center;
+
+  .heartIcon {
+    @apply w-5 h-5;
+  }
+
+  .priceblock {
+    @apply flex flex-col;
+
+    .priceText {
+      @apply font-inter;
+    }
+    .price {
+      @apply flex items-start;
+      .cent {
+        @apply text-xs;
+      }
+    }
+  }
+}

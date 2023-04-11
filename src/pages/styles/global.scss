@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css";
+@import "~video-react/styles/scss/video-react";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  @apply m-0 p-0;
+}
+
+main {
+  @apply w-full;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.slick-arrow {
+  @apply w-10 h-10 text-5xl z-50  text-center;
+
+  @media screen and (max-width: 550px) {
+    @apply w-10 h-10;
+  }
+
+  &:before {
+    @apply w-64 h-64 text-5xl z-50 text-light-gray;
+
+    @media screen and (max-width: 550px) {
+      @apply text-3xl;
+    }
+  }
+}
+
+.slick-next {
+  right: -17px;
+}

@@ -1,0 +1,66 @@
+.container {
+  @apply w-full   bg-light-green py-10;
+
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @apply flex gap-2 items-center justify-between;
+
+    @media screen and (max-width: 950px) {
+      @apply flex-col;
+    }
+
+    .featuresTitle {
+      @apply font-inter text-3xl font-bold;
+
+      @media screen and (max-width: 1440px) {
+        @apply text-2xl;
+      }
+
+      @media screen and (max-width: 950px) {
+        @apply text-xl;
+      }
+
+      @media screen and (max-width: 550px) {
+        @apply text-xl text-center;
+      }
+    }
+
+    .featuresLeft {
+      @apply w-2/5;
+
+      @media screen and (max-width: 950px) {
+        @apply w-full flex flex-col items-center;
+      }
+
+      .featuresList {
+        @apply py-5;
+
+        .featuresListItem {
+          @apply pb-4 font-inter;
+
+          .titleBlock {
+            @apply w-full flex items-center gap-2 pb-2;
+
+            .itemTitle {
+              @apply text-base font-bold font-inter;
+            }
+          }
+        }
+      }
+    }
+
+    .featuresRight {
+      @apply w-3/5;
+
+      @media screen and (max-width: 950px) {
+        @apply w-full;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  @apply w-full flex justify-center items-center gap-5 bg-ultra-light-gray;
+
+  @media screen and (max-width: 550px) {
+    @apply gap-2;
+  }
+
+  .trustedTitle {
+    @apply font-inter text-light-gray;
+
+    @media screen and (max-width: 550px) {
+      @apply text-sm;
+    }
+  }
+
+  .trustedIcon {
+    @apply w-16;
+
+    @media screen and (max-width: 550px) {
+      @apply w-10;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  @apply w-full;
+
+  .accordion {
+    @apply border-none outline-none shadow-none;
+  }
+
+  .title {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}

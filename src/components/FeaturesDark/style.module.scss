@@ -1,0 +1,119 @@
+.container {
+  @apply w-full  bg-dark-blue gap-20 py-10;
+
+  @media screen and (max-width: 1440px) {
+    @apply px-5;
+  }
+
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    @apply flex justify-between;
+
+    @media screen and (max-width: 950px) {
+      @apply flex-col;
+    }
+
+    .featuresDarkLogo {
+      @apply w-60 flex gap-4 justify-start items-center pb-10;
+
+      .logoText {
+        @apply text-white font-inter text-4xl;
+
+        @media screen and (max-width: 1440px) {
+          @apply text-3xl;
+        }
+
+        @media screen and (max-width: 950px) {
+          @apply text-2xl;
+        }
+
+        @media screen and (max-width: 550px) {
+          @apply text-2xl text-center;
+        }
+      }
+
+      .logoNew {
+        @apply block  h-6 text-base bg-blue px-2 pt-1    text-center  rounded-2xl text-xs;
+      }
+    }
+
+    .featuresDarkLeft {
+      @apply w-2/5;
+
+      @media screen and (max-width: 950px) {
+        @apply w-full;
+      }
+
+      .featuresDarkTitle {
+        @apply font-inter text-4xl font-bold text-white;
+
+        @media screen and (max-width: 1440px) {
+          @apply text-3xl;
+        }
+
+        @media screen and (max-width: 950px) {
+          @apply text-2xl;
+        }
+
+        @media screen and (max-width: 550px) {
+          @apply text-2xl text-center;
+        }
+
+        span {
+          @apply italic;
+        }
+      }
+
+      .featuresDarkDesc {
+        @apply text-white text-xl font-inter my-6;
+      }
+
+      .featuresDarkList {
+        .featuresDarkListItem {
+          @apply flex items-start gap-2 mb-2;
+
+          .itemTitle {
+            @apply text-white text-xl font-inter;
+
+            @media screen and (max-width: 550px) {
+              @apply text-base;
+            }
+          }
+
+          .listItemImg {
+            @apply w-5 h-5 mt-1;
+          }
+        }
+      }
+
+      .wrapperBtn {
+        @apply flex items-center w-80 h-12 py-2 mt-5 bg-green rounded-md;
+
+        @media screen and (max-width: 550px) {
+          @apply w-full;
+        }
+
+        &:hover {
+          @apply opacity-80 duration-300;
+        }
+
+        .btnLink {
+          @apply w-full block text-center;
+        }
+      }
+    }
+
+    .featuresDarkRight {
+      @apply w-3/5;
+
+      @media screen and (max-width: 950px) {
+        @apply w-full;
+      }
+
+      .featuresDarkRightImg {
+        @apply w-full h-auto;
+      }
+    }
+  }
+}

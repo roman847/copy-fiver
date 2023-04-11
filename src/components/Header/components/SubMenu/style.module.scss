@@ -1,0 +1,32 @@
+.containerSubMenu {
+  @apply w-full bg-white duration-300;
+
+  @media screen and (max-width: 1100px) {
+    @apply hidden;
+  }
+
+  .subMenuLine {
+    @apply text-gray;
+  }
+
+  .wrapperSubMenu {
+    margin: 0 auto;
+    @apply max-w-screen-2xl;
+
+    .subMenuList {
+      @apply flex justify-between py-1 px-10 duration-300;
+
+      @media screen and (max-width: 1440px) {
+        @apply px-5;
+      }
+    }
+  }
+
+  .itemLink {
+    @apply text-gray font-inter text-base;
+
+    @media screen and (max-width: 1440px) {
+      @apply text-sm;
+    }
+  }
+}

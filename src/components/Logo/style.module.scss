@@ -1,0 +1,15 @@
+.logoContainer {
+  @apply flex items-center;
+
+  .logoTitle {
+    @apply text-2xl text-white font-inter font-black;
+  }
+
+  .logoTitleActive {
+    @apply text-2xl text-black font-inter font-black;
+  }
+
+  .logoDot {
+    @apply text-3xl font-inter font-black text-green mb-1;
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+  @apply bg-white;
+  .columnTitle {
+    @apply text-base font-bold font-inter mb-4;
+  }
+}
+
+.columnList {
+  @apply flex flex-col gap-2;
+}
+.itemLink {
+  @apply relative text-base font-inter text-black duration-300;
+
+  &:hover::before {
+    content: "";
+    @apply absolute bottom-0 w-full h-0.5 bg-black duration-300;
+  }
+}
+.underLink {
+  @apply text-sm font-inter text-gray;
+}

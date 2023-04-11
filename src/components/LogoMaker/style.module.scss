@@ -1,0 +1,125 @@
+.container {
+  @apply w-full bg-light-blue;
+
+  @media screen and (max-width: 1440px) {
+    @apply pl-5;
+  }
+
+  .wrapper {
+    background-image: url("/img/logo-maker-banner.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
+    @apply flex flex-col gap-2 justify-between bg-light-blue py-10;
+
+    @media screen and (max-width: 1300px) {
+      background-size: 1300px auto;
+    }
+
+    @media screen and (max-width: 1280px) {
+      background-size: 1280px auto;
+    }
+
+    @media screen and (max-width: 950px) {
+      background-image: none;
+      @apply relative bg-light-blue pr-0 pb-0;
+    }
+
+    .contentWrapper {
+      @apply flex flex-col gap-4;
+
+      @media screen and (max-width: 950px) {
+        @apply absolute gap-2;
+      }
+
+      .logoLM {
+        @apply flex gap-2 mb-6;
+
+        .logoText {
+          @apply text-white font-inter text-4xl;
+
+          @media screen and (max-width: 1440px) {
+            @apply text-3xl;
+          }
+
+          @media screen and (max-width: 950px) {
+            @apply text-2xl;
+          }
+
+          @media screen and (max-width: 550px) {
+            @apply text-2xl text-center;
+          }
+        }
+      }
+
+      .title {
+        @apply font-inter text-4xl font-bold text-white;
+
+        @media screen and (max-width: 1440px) {
+          @apply text-3xl;
+        }
+
+        @media screen and (max-width: 950px) {
+          @apply text-2xl;
+        }
+
+        @media screen and (max-width: 550px) {
+          @apply text-2xl;
+        }
+
+        span {
+          @apply italic;
+        }
+      }
+
+      .text {
+        @apply text-white text-xl font-inter;
+
+        @media screen and (max-width: 550px) {
+          @apply text-base;
+        }
+
+        @media screen and (max-width: 400px) {
+          @apply text-sm;
+        }
+      }
+
+      .buttonWrapper {
+        @apply flex items-center w-80 h-12 py-2 mt-5 bg-gray rounded-md;
+
+        @media screen and (max-width: 550px) {
+          @apply w-3/4;
+        }
+
+        &:hover {
+          @apply opacity-80 duration-300;
+        }
+
+        .btnLink {
+          @apply w-full block text-center;
+        }
+      }
+    }
+
+    .wrapperBanner {
+      @apply w-full pt-14;
+
+      @media screen and (max-width: 450px) {
+        @apply pt-24;
+      }
+
+      @media screen and (max-width: 400px) {
+        @apply pt-32;
+      }
+
+      @media screen and (max-width: 350px) {
+        @apply pt-40;
+      }
+
+      .banner {
+        @apply w-full h-auto;
+      }
+    }
+  }
+}
